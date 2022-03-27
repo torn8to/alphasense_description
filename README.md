@@ -1,2 +1,2 @@
-# halo_description
+# alphasense_description
 URDF Model definition of the Alphasense Dev Kit)
