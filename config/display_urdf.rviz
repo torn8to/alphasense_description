@@ -9,6 +9,8 @@ Panels:
         - /Grid1
         - /RobotModel1
         - /TF1/Frames1
+        - /IMU Frame1
+        - /CamTop1
       Splitter Ratio: 0.48801368474960327
     Tree Height: 750
   - Class: rviz/Selection
@@ -65,6 +67,11 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        alphasense_imu:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         alphasense_mount:
           Alpha: 1
           Show Axes: false
@@ -94,7 +101,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        imu_link:
+        cam_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -126,7 +133,7 @@ Visualization Manager:
       Length: 0.10000000149011612
       Name: IMU Frame
       Radius: 0.0010000000474974513
-      Reference Frame: imu_link
+      Reference Frame: alphasense_imu
       Value: true
     - Alpha: 1
       Class: rviz/Axes
@@ -162,11 +169,19 @@ Visualization Manager:
       Value: true
     - Alpha: 1
       Class: rviz/Axes
-      Enabled: true
+      Enabled: false
       Length: 0.10000000149011612
       Name: Base
       Radius: 0.0010000000474974513
       Reference Frame: <Fixed Frame>
+      Value: false
+    - Alpha: 1
+      Class: rviz/Axes
+      Enabled: true
+      Length: 0.05000000074505806
+      Name: CamTop
+      Radius: 0.0020000000949949026
+      Reference Frame: cam_top
       Value: true
   Enabled: true
   Global Options:
@@ -196,7 +211,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.3325173556804657
+      Distance: 0.33783799409866333
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -204,17 +219,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.014251982793211937
-        Y: -0.005732167512178421
-        Z: 0.008876536972820759
+        X: 0.010239711962640285
+        Y: -0.0003429025528021157
+        Z: 0.04019216075539589
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6297969818115234
+      Pitch: 0.6797975301742554
       Target Frame: <Fixed Frame>
-      Yaw: 0.6635625958442688
+      Yaw: 0.838573694229126
     Saved: ~
 Window Geometry:
   Displays:
