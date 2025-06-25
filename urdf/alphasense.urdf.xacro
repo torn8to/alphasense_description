@@ -35,7 +35,7 @@ limitations under the License.
   <link name="alphasense_mount">
     <visual>
       <geometry>
-        <mesh filename="package://alphasense_description/urdf/meshes/alphasense_simplified.dae" />
+        <mesh filename="$(find alphasense_description)/urdf/meshes/alphasense_simplified.dae" />
       </geometry>
     </visual>
 
